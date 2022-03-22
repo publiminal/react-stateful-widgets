@@ -37,7 +37,7 @@ export default function Programmers() {
     // The beauty of closures is that we can "see" both slices of state from this region
     // of the program, without needing to inject the information through arguments.
     // console.log(idDev)
-    const name =  devList.filter( dev => dev.id === idDev ).map(dev => dev.name)
+    const name =  devList.filter( programmers => programmers.id === idDev ).map(chosen =>chosen.name)
     // console.log(name)
     return  name
   };
