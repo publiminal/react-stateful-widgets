@@ -38,7 +38,7 @@ export default function Programmers() {
     // of the program, without needing to inject the information through arguments.
     console.log(idDev)
     const name =  devList.filter( dev => dev.id === idDev ).map(dev => dev.name)
-    console.log(name)
+    // console.log(name)
     return  name
   };
 
