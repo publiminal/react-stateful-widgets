@@ -80,7 +80,7 @@ const [count, setCount] = useState(0)
     <div className='widget-counter container'>
       <h2>Counter</h2>
       <div id='count' style={style}>
-        Number {count} is { isEven()? 'even' : 'odd'    /* STEP 3 */}
+        Number {count} is { isEven(count)? 'even' : 'odd'    /* STEP 3 */}
       </div>
       <div>
         <button id='increment' onClick={() => setCount(count + 1)}>Increment</button>
